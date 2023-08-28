@@ -19,7 +19,7 @@ names = []
 filter = open('C:\\Users\\SamDunning\\Desktop\\EvernoteToObsidian\\FilterWords.txt', 'r').read().split("\n")
 
 # --Replace with directory of yarle exported markdown files
-exportedDirectory = 'C:\\Users\\SamDunning\\Desktop\\EvernoteToObsidian\\Yarle Output\\notes\\Evernote'
+exportedDirectory = 'C:\\Users\\SamDunning\\Desktop\\EvernoteToObsidian\\Yarle Output\\notes\\Example'
 for filename in os.listdir(exportedDirectory):
     f = os.path.join(exportedDirectory, filename)
     if os.path.isfile(f):
@@ -27,7 +27,7 @@ for filename in os.listdir(exportedDirectory):
         files.append([filename[:-3], open(f, "r+", encoding="utf8").read()])
 
 # --Replace directory with Obsidian Directory
-ObsidianDirectory = "C:\\Users\\SamDunning\\Desktop\\EvernoteToObsidian\\PKM\\PKM\\"
+ObsidianDirectory = "C:\\Users\\SamDunning\\Desktop\\EvernoteToObsidian\\NoteArchive\\"
 for filename in os.listdir(ObsidianDirectory):
     f = os.path.join(ObsidianDirectory, filename)
     if os.path.isfile(f):
